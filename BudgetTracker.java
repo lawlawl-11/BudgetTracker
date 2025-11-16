@@ -9,14 +9,14 @@ import components.UserAccounts;
 
 public class BudgetTracker{
     private static final Scanner sc = new Scanner(System.in);
-    private static final Bank bank = new Bank();
+    private static final UserAccounts user = new UserAccounts();
 
     public static void main(String[] args) {
         int choice;
         
         do {
             System.out.println("\n=== BUDGET TRACKER SYSTEM ===");
-            System.out.println("[1] Add Account");
+            System.out.println("[1] Add Account"); 
             System.out.println("[2] Open Account");
             System.out.println("[3] Add Expenses");
             System.out.println("[4] Add Budget");
@@ -63,5 +63,7 @@ public class BudgetTracker{
 
                 default:
                     System.out.println("Invalid choice. Try again.");
-            
-
+            }          
+        }while (choice != 0);
+    }
+}
