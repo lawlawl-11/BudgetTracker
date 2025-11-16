@@ -1,14 +1,13 @@
-package src;
+package main;
 
 import java.util.Scanner;
 
 import components.Account;
 import components.Expenses;
 import components.CheckingExpenses;
-import components.CheckingBudget;
 import components.UserAccounts;
 
-public class BankSystem {
+public class BudgetTracker{
     private static final Scanner sc = new Scanner(System.in);
     private static final Bank bank = new Bank();
 
@@ -64,4 +63,5 @@ public class BankSystem {
 
                 default:
                     System.out.println("Invalid choice. Try again.");
-                
+            
+
