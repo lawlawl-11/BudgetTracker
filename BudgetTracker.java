@@ -18,11 +18,11 @@ public class BudgetTracker{
             System.out.println("\n=== BUDGET TRACKER SYSTEM ===");
             System.out.println("[1] Add Account"); 
             System.out.println("[2] Open Account");
-            System.out.println("[3] Add Expenses");
-            System.out.println("[4] Add Budget");
-            System.out.println("[5] View Budget");
-            System.out.println("[6] View Expenses");
-            System.out.println("[7] View All Accounts");
+            System.out.println("[3] View All Accounts");
+            System.out.println("[4] Add Expenses");
+            System.out.println("[5] Add Budget");
+            System.out.println("[6] View Budget");
+            System.out.println("[7] View Expenses");
             System.out.println("[0] Exit");
             System.out.print("Enter choice: ");
             choice = sc.nextInt();
@@ -38,23 +38,23 @@ public class BudgetTracker{
                     break;
 
                 case 3:
-                    addExpenses();
+                    user.showAllAccount();
                     break;
 
                 case 4:
-                    addBudget();
+                    addExpenses();
                     break;
 
                 case 5:
-                    viewBudget();
+                    addBudget();
                     break;
 
                 case 6:
-                    viewExpenses();
+                    viewBudget();
                     break;
 
                 case 7:
-                    bank.showAllAccount();
+                    viewExpenses();
                     break;
 
                 case 0:
@@ -67,3 +67,4 @@ public class BudgetTracker{
         }while (choice != 0);
     }
 }
+
